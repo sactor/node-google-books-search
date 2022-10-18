@@ -1,29 +1,30 @@
 {
   "name": "google-books-search",
-  "version": "0.3.1",
-  "description": "A lightweight node wrapper for the Google Books API.",
+  "version": "0.3.2",
+  "description": "A lightweight node wrapper for the Google Books API using fetch API, based on https://github.com/smilledge/node-google-books-search",
   "main": "./lib/google-books-search.js",
   "dependencies": {
     "lodash": "^4.4.0",
+    "node-fetch": "^2.6.7",
     "querystring": "^0.2.0"
   },
   "devDependencies": {
-    "mocha": "1.x.x",
+    "mocha": "^10.1.0",
     "should": "0.6.x"
   },
   "scripts": {
-    "test": "make test"
+    "test": "mocha -R list"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/smilledge/node-google-books-search"
+    "url": "https://github.com/sactor/node-google-books-search"
   },
   "keywords": [
     "google-books",
     "api",
     "books"
   ],
-  "author": "Sam Milledge",
+  "author": "Antti Kumpulainen",
   "license": "MIT",
-  "readmeFilename": "REAMDE.md"
+  "readmeFilename": "README.md"
 }
